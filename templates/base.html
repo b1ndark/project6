@@ -35,7 +35,7 @@
         <!-- Extra JS -->
     {% endblock %}
 
-    <title>Hello, world!{% if extra_title %} | {% endif %}{% block extra_title %}</title>
+    <title>Hello, world!{% if extra_title %} | {% endif %}{% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     {% if messages %}

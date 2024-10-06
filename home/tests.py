@@ -5,4 +5,4 @@ class TestHomeView(TestCase):
     def test_home_view(self):
         response = self.client.get('/')
         
-    self.assertTemplateUsed(response, 'home/index.html')
+        self.assertTemplateUsed(response, 'home/index.html')
