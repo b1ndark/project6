@@ -38,6 +38,21 @@
     <title>Hello, world!{% if extra_title %} | {% endif %}{% block extra_title %}</title>
   </head>
   <body>
+    {% if messages %}
+        <!-- If messages -->
+        <div class="message-container"></div>
+    {% endif %}
 
+    {% block page_header %}
+        <!-- Page header -->
+    {% endblock %}
+
+    {% block content %}
+        <!-- Page content -->
+    {% endblock %}
+
+    {% block postloadjs %}
+        <!-- JS Scripts -->
+    {% endblock %}
   </body>
 </html>
